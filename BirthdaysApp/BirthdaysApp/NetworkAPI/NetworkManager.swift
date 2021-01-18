@@ -10,12 +10,12 @@ import Alamofire
 
 class NetworkManager {
     static let shared = NetworkManager()
-
-    func apiCall() {
+    
+    func apiGetBirthdays(completion: @escaping (_ response: BirthdaysResponse?) -> Void) {
         let todosEndpoint: String = "https://randomuser.me/api/?results=1000&seed=chalkboard&inc=name,dob"
         let request = AF.request(todosEndpoint)
-        request.responseDecodable() { (result: DataResponse<BirthdaysResponse, AFError>) in
-            
+        request.responseDecodable() { (response: DataResponse<BirthdaysResponse, AFError>) in
+            completion(response.value)
         }
     }
 }
