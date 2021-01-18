@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="118" id="vGl-2A-ZaG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BirthdaysListVC_Cell" rowHeight="118" id="vGl-2A-ZaG" customClass="BirthdaysListVC_Cell" customModule="BirthdaysApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vGl-2A-ZaG" id="fk5-lG-Lll">
@@ -56,7 +56,7 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-rw-9xZ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -120,6 +120,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="CGo-lf-9rM" secondAttribute="bottom" priority="250" id="yIi-sh-8cl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblBirthData" destination="wT1-WD-fPq" id="Gku-Wl-ABq"/>
+                                            <outlet property="lblInitials" destination="c9b-rw-9xZ" id="WEK-VS-d8z"/>
+                                            <outlet property="lblName" destination="pZg-LR-3KK" id="QmF-HF-d4d"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -133,15 +138,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lcg-en-gqr"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="vm4-qh-Kd7" id="3NB-LQ-FZz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMJ-5c-UpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113.04347826086958" y="-548.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Birthday DetailVC-->
         <scene sceneID="8aD-FR-Raf">
             <objects>
-                <viewController id="uAY-vC-XFm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BirthdayDetailVC" id="uAY-vC-XFm" customClass="BirthdayDetailVC" customModule="BirthdaysApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UrY-Mv-nkl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +162,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddl-db-k3G">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="55"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -188,6 +196,9 @@
                                             <constraint firstAttribute="height" constant="50" id="b3O-iW-cEr"/>
                                         </constraints>
                                         <state key="normal" title="GO BACK"/>
+                                        <connections>
+                                            <action selector="btnBackClickWithSender:" destination="uAY-vC-XFm" eventType="touchUpInside" id="JMH-6I-RD4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -215,6 +226,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PBx-cF-YR7"/>
                     </view>
+                    <connections>
+                        <outlet property="btnBack" destination="mE3-2X-eHL" id="7VS-wm-z1a"/>
+                        <outlet property="lblAge" destination="CGR-yM-698" id="LYt-2J-wqU"/>
+                        <outlet property="lblInitials" destination="Ddl-db-k3G" id="3bb-qV-uKj"/>
+                        <outlet property="lblName" destination="El3-dC-QUE" id="nb0-uA-2Kf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sab-VF-dmm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

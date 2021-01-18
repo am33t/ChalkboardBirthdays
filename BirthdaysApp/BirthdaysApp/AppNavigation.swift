@@ -15,4 +15,10 @@ class AppNavigation {
         }
         return nil
     }
+    static func birthdayDetailVC() -> UIViewController? {
+        if let vc = UIStoryboard.mainStoryboard().instantiateViewController(identifier: "BirthdayDetailVC") as? BirthdayDetailVC {
+            return vc
+        }
+        return nil
+    }
 }

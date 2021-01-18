@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2768005225B5E9B5008A7EBA /* BirthdayDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768005125B5E9B5008A7EBA /* BirthdayDetailVC.swift */; };
 		27A4B43A25B5B93300AFAE7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4B43925B5B93300AFAE7B /* AppDelegate.swift */; };
 		27A4B43C25B5B93300AFAE7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4B43B25B5B93300AFAE7B /* SceneDelegate.swift */; };
 		27A4B43E25B5B93300AFAE7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4B43D25B5B93300AFAE7B /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2768005125B5E9B5008A7EBA /* BirthdayDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDetailVC.swift; sourceTree = "<group>"; };
 		27A4B43625B5B93300AFAE7B /* BirthdaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A4B43925B5B93300AFAE7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27A4B43B25B5B93300AFAE7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2768005025B5E992008A7EBA /* BirthdayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2768005125B5E9B5008A7EBA /* BirthdayDetailVC.swift */,
+			);
+			path = BirthdayDetail;
+			sourceTree = "<group>";
+		};
 		27A4B42D25B5B93300AFAE7B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 				27C097EF25B5C518006CE008 /* Models */,
 				27C097EB25B5C4AC006CE008 /* BirthdaysListPresentable.swift */,
 				27C097E825B5C3FD006CE008 /* BirthdaysList */,
+				2768005025B5E992008A7EBA /* BirthdayDetail */,
 				27A4B43925B5B93300AFAE7B /* AppDelegate.swift */,
 				27A4B43B25B5B93300AFAE7B /* SceneDelegate.swift */,
 				27A4B43D25B5B93300AFAE7B /* ViewController.swift */,
@@ -250,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2768005225B5E9B5008A7EBA /* BirthdayDetailVC.swift in Sources */,
 				27C097F225B5C76F006CE008 /* AppExtensions.swift in Sources */,
 				27A4B43E25B5B93300AFAE7B /* ViewController.swift in Sources */,
 				27C097EE25B5C4EB006CE008 /* BirthdaysListVM.swift in Sources */,
