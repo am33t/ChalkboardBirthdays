@@ -6,5 +6,5 @@ target 'BirthdaysApp' do
   use_frameworks!
 
   # Pods for BirthdaysApp
-
+  pod 'Alamofire', '~> 5.2'
 end
