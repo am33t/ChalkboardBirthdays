@@ -34,7 +34,7 @@ extension BirthdaysListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "BirthdaysListVC_Cell") as? BirthdaysListVC_Cell {
-            cell.setVM(vm: viewModel?.birthdayVMs[indexPath.row])
+            cell.setVM(vm: viewModel?.birthdayVMs[safe: indexPath.row])
             return cell
         }
         return UITableViewCell.init()

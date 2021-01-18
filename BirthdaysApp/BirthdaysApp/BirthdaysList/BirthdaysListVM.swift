@@ -19,7 +19,9 @@ class BirthdaysListVM: BirthdaysListPresentable {
      }
     
     func onClickIndex(index: Int) {
-        delegate?.navigateToBirthday(vm: birthdayVMs[index], index: index)
+        if let birthdayVM = birthdayVMs[safe: index] {
+            delegate?.navigateToBirthday(vm: birthdayVM, index: index)
+        }
     }
     
     private func fetchData() {
@@ -69,6 +71,4 @@ class BirthdayVM: BirthdayPresentable {
             self.age = ""
         }
     }
-    
-    
 }
