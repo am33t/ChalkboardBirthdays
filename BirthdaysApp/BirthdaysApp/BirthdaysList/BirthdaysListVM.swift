@@ -54,7 +54,18 @@ class BirthdayVM: BirthdayPresentable {
     var birthday: String
     
     init(birthday: BirthdaysResponse.Result) {
-        name = [birthday.name?.first ?? "", birthday.name?.last ?? ""].joined(separator: " ")
+        var nameParts: [String] = []
+        if birthday.name?.title?.count ?? 0 > 0 {
+            nameParts.append((birthday.name?.title ?? "") + ".")
+        }
+        if birthday.name?.first?.count ?? 0 > 0 {
+            nameParts.append(birthday.name?.first ?? "")
+        }
+        if birthday.name?.last?.count ?? 0 > 0 {
+            nameParts.append(birthday.name?.last ?? "")
+        }
+        name = nameParts.joined(separator: " ")
+        
         self.birthday = birthday.dob?.date?.toDate(format: dateFormat1)?.toString(format: dateFormat2) ?? ""
         var chars: [String] = [String]()
         if let char = birthday.name?.first?.first {
