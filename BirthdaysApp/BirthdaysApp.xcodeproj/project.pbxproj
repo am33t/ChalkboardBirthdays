@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27036B9F25D26CE400182E76 /* BirthdaysAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27036B9E25D26CE400182E76 /* BirthdaysAppTests.swift */; };
 		2768005225B5E9B5008A7EBA /* BirthdayDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768005125B5E9B5008A7EBA /* BirthdayDetailVC.swift */; };
 		2768005525B5EE6B008A7EBA /* BirthdaysListPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768005425B5EE6B008A7EBA /* BirthdaysListPresentable.swift */; };
 		27A4B43A25B5B93300AFAE7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4B43925B5B93300AFAE7B /* AppDelegate.swift */; };
@@ -23,7 +24,20 @@
 		B7C945D616FC3521899E7C9B /* Pods_BirthdaysApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BEB279ECE6DB7CC6345DF3 /* Pods_BirthdaysApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		27036BA125D26CE400182E76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A4B42E25B5B93300AFAE7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A4B43525B5B93300AFAE7B;
+			remoteInfo = BirthdaysApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		27036B9C25D26CE400182E76 /* BirthdaysAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirthdaysAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27036B9E25D26CE400182E76 /* BirthdaysAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysAppTests.swift; sourceTree = "<group>"; };
+		27036BA025D26CE400182E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2768005125B5E9B5008A7EBA /* BirthdayDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDetailVC.swift; sourceTree = "<group>"; };
 		2768005425B5EE6B008A7EBA /* BirthdaysListPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdaysListPresentable.swift; sourceTree = "<group>"; };
 		27A4B43625B5B93300AFAE7B /* BirthdaysApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdaysApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27036B9925D26CE400182E76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27A4B43325B5B93300AFAE7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27036B9D25D26CE400182E76 /* BirthdaysAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				27036B9E25D26CE400182E76 /* BirthdaysAppTests.swift */,
+				27036BA025D26CE400182E76 /* Info.plist */,
+			);
+			path = BirthdaysAppTests;
+			sourceTree = "<group>";
+		};
 		2768005025B5E992008A7EBA /* BirthdayDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				27A4B43825B5B93300AFAE7B /* BirthdaysApp */,
+				27036B9D25D26CE400182E76 /* BirthdaysAppTests */,
 				27A4B43725B5B93300AFAE7B /* Products */,
 				F671D360C2CB7970AF749D71 /* Pods */,
 				97179A863ACDEC27CF9607E0 /* Frameworks */,
@@ -87,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				27A4B43625B5B93300AFAE7B /* BirthdaysApp.app */,
+				27036B9C25D26CE400182E76 /* BirthdaysAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +188,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		27036B9B25D26CE400182E76 /* BirthdaysAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27036BA525D26CE400182E76 /* Build configuration list for PBXNativeTarget "BirthdaysAppTests" */;
+			buildPhases = (
+				27036B9825D26CE400182E76 /* Sources */,
+				27036B9925D26CE400182E76 /* Frameworks */,
+				27036B9A25D26CE400182E76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27036BA225D26CE400182E76 /* PBXTargetDependency */,
+			);
+			name = BirthdaysAppTests;
+			productName = BirthdaysAppTests;
+			productReference = 27036B9C25D26CE400182E76 /* BirthdaysAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		27A4B43525B5B93300AFAE7B /* BirthdaysApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27A4B44A25B5B93800AFAE7B /* Build configuration list for PBXNativeTarget "BirthdaysApp" */;
@@ -184,6 +234,10 @@
 				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1170;
 				TargetAttributes = {
+					27036B9B25D26CE400182E76 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 27A4B43525B5B93300AFAE7B;
+					};
 					27A4B43525B5B93300AFAE7B = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -203,11 +257,19 @@
 			projectRoot = "";
 			targets = (
 				27A4B43525B5B93300AFAE7B /* BirthdaysApp */,
+				27036B9B25D26CE400182E76 /* BirthdaysAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		27036B9A25D26CE400182E76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27A4B43425B5B93300AFAE7B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +325,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		27036B9825D26CE400182E76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27036B9F25D26CE400182E76 /* BirthdaysAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27A4B43225B5B93300AFAE7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +351,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27036BA225D26CE400182E76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27A4B43525B5B93300AFAE7B /* BirthdaysApp */;
+			targetProxy = 27036BA125D26CE400182E76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27A4B43F25B5B93300AFAE7B /* Main.storyboard */ = {
@@ -302,6 +380,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		27036BA325D26CE400182E76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BirthdaysAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.am33t.BirthdaysAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirthdaysApp.app/BirthdaysApp";
+			};
+			name = Debug;
+		};
+		27036BA425D26CE400182E76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BirthdaysAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.am33t.BirthdaysAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirthdaysApp.app/BirthdaysApp";
+			};
+			name = Release;
+		};
 		27A4B44825B5B93800AFAE7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -455,6 +571,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27036BA525D26CE400182E76 /* Build configuration list for PBXNativeTarget "BirthdaysAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27036BA325D26CE400182E76 /* Debug */,
+				27036BA425D26CE400182E76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		27A4B43125B5B93300AFAE7B /* Build configuration list for PBXProject "BirthdaysApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
